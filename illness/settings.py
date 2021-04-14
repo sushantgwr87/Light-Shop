@@ -12,13 +12,12 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 from django.contrib.messages import constants as messages
-import environ
+from decouple import config
 
-env = environ.Env()
-environ.Env.read_env()
+SECRET_KEY = config('SECRET_KEY')
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-SECRET_KEY = env("SECRET_KEY")
+# SECRET_KEY = env("SECRET_KEY")
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
