@@ -23,7 +23,7 @@ SECRET_KEY = "cskzyar@_i)qn(6*e*=ae(2a6&ec=6d8hay%6(_nnq*_o83a$^"
 # SECRET_KEY = 'cskzyar@_i)qn(6*e*=ae(2a6&ec=6d8hay%6(_nnq*_o83a$^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
