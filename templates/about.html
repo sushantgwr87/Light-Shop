@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block css %}
+.log {
+    height: 7vw !important;
+}
+@media (max-width: 630px) { 
+  .log {
+    height: 15vw !important;
+}
+  .me {
+      width: 40% !important;
+  }
+}
+@media (max-width: 500px) {
+    h1,h5,h3,h4 {
+        font-size: 5vw !important;
+    }
+}
+@media (max-width: 300px) {
+    .cont {
+        min-height: 60%;
+    }
+    h1 {
+        font-size: 7vw !important;
+    }
+    h3,h5,h4 {
+        font-size: 5vw !important;
+    }
+    .log {
+        height: 16vw !important;
+    }
+    .me {
+        width: 40% !important;
+    }
+}
+{% endblock css %}
+
+{% block title %}About us{% endblock title %}
+
+{% block body %}
+<div class="container text-center p-5">
+   <h1>Welcome to Django Project!</h1>
+   <h3 class="my-3">Made Using</h3>
+   <div class="logo my-4">
+       <img class="log" src="/static/img/Boot.png" alt="...">
+       <img class="log" src="/static/img/Django.png" alt="...">
+   </div>
+   <h4 class="text-muted">This is a Ecommerce Website for Light Shop Designed Using Django, Bootstrap and some custom CSS and jQuery</h4>
+   <div class="row mt-5">
+       <div class="col-12">
+           <img class="me" src="/static/img/me.jpg" alt="..." style="width: 20%;border-radius: 50%;">
+        </div>
+        <div class="col-12 text-break mt-4">
+            <h5>Hey there! I am Sushant Gangwar, a freelance web devloper and graphic designer.</h5>
+        </div>
+    </div>
+</div>
+{% endblock body %}
