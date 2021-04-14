@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = ['https://lightsgwr.herokuapp.com/']
+ALLOWED_HOSTS = ['lightsgwr.herokuapp.com']
 
 
 # Application definition
