@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 from django.contrib.messages import constants as messages
 from decouple import config
+import django_heroku
 
 SECRET_KEY = config('SECRET_KEY')
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -129,3 +130,6 @@ STATIC_ROOT = BASE_DIR / "static"
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = BASE_DIR / "media"
+
+#Added manually
+django_heroku.settings(locals())
