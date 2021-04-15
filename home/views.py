@@ -34,7 +34,7 @@ def contact(request):
 
 def detail(request,mod):
     # products = Product.objects.all()
-    d = Product.objects.get(mod)
+    d = Product.objects.get(model=mod)
     det = {'details': d}
     # for i in products:
     #     if(i.model==mod):
