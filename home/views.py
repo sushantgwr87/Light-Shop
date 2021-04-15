@@ -33,9 +33,10 @@ def contact(request):
     return render(request, 'contact.html')
 
 def detail(request,mod):
-    products = Product.objects.all()
-    det = {}
-    for i in products:
-        if(i.model==mod):
-            det = { 'details' : i}
+    # products = Product.objects.all()
+    d = Product.objects.get(mod)
+    det = {'details': d}
+    # for i in products:
+    #     if(i.model==mod):
+    #         det = { 'details' : i}
     return render(request, 'detail.html',det)
