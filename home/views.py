@@ -12,11 +12,11 @@ def index(request):
     if request.method == "POST":
         n = request.POST.get('search')
         products = products.filter(name__icontains=n)
-    if not products:
-        messages.warning(request, 'Not found !')
-        par = { 'product': pro}
-    else:
-        par = { 'product': products}
+        if not products:
+            messages.warning(request, 'Not found !')
+            par = { 'product': pro}
+        else:
+            par = { 'product': products}
     return render(request, 'index.html', par)
 
 def about(request):
