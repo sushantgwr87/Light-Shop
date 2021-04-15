@@ -110,7 +110,8 @@
         <div class="card-body">
           <h5 class="card-title">{{i.name|upper}}</h5>
           <p class="card-text text-truncate">{{i.desc|title}}</p>
-          <a href="/detail/{{i.model}}" class="btn btn-outline-success">See More</a>
+          {% comment %} <a href="/detail/{{i.model}}" class="btn btn-outline-success">See More</a> {% endcomment %}
+          <a href="{% url "detail" mod=i.model %}" class="btn btn-outline-success">See More</a>
         </div>
       </div>
     </div>
