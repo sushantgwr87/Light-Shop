@@ -106,7 +106,7 @@
     {% for i in product %}
     <div class="col-xs-12 col-md-6 col-lg-3 my-3">
       <div class="card" style="width: 90%;">
-        <img src="{{i.img}}" class="card-img-top" alt="...">
+        <img src="{{i.img.url}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{i.name|upper}}</h5>
           <p class="card-text text-truncate">{{i.desc|title}}</p>
