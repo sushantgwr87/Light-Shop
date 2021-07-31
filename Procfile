@@ -1,1 +1,1 @@
-web: gunicorn illness.wsgi
+web: gunicorn lightshop.wsgi

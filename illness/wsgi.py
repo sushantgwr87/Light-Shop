@@ -1,5 +1,5 @@
 """
-WSGI config for illness project.
+WSGI config for lightshop project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -14,7 +14,7 @@ from django.core.wsgi import get_wsgi_application
 # from whitenoise.django import DjangoWhiteNoise
 
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'illness.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'lightshop.settings')
 
 application = get_wsgi_application()
 # application = DjangoWhiteNoise(application)
