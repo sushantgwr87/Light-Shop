@@ -2,7 +2,6 @@
 
 A Light shop ecommerce website with SQL database implemented using Django framework.
 
-
 ## Details
 
 ### Folder and App directory
@@ -20,5 +19,30 @@ SQLite is used for database. Backened-database can be accessed only by admin pan
 ### Procfile
 For Heroku hosting via gunicorn package.
 
-## Styling
+### Styling
 Bootstrap version 5 is used for ease of designing.
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`SECRET_KEY = API key`
+
+In settings.py this key is used :
+
+`SECRET_KEY = config('The variable name in .env')`
+
+In my case, variable name is SECRET_KEY name itself :
+
+`SECRET_KEY = config('SECRET_KEY')`
+
+### Note
+If you store API key as string in .env then remove quotations inside config.
+
+In .env file
+
+`SECRET_KEY = 'API key'`
+
+In settings.py
+
+`SECRET_KEY = config(SECRET_KEY)`
