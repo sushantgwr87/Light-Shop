@@ -41,24 +41,19 @@ Bootstrap version 5 is used for ease of designing.
 
 ## Environment Variables
 
-- To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variables to your .env file
 
-`SECRET_KEY = API key`
+    SECRET_KEY = API key
 
-- In settings.py this key is used :
+In settings.py this key is used as:
 
-`SECRET_KEY = config('The variable name in .env')`
+    SECRET_KEY = config('The variable name in .env inside quotes')
 
-- In my case, variable name is SECRET_KEY name itself :
-
-`SECRET_KEY = config('SECRET_KEY')`
-
-**If you store API key as string in .env then remove quotations inside config.**
-
+If you store API key as string in .env then remove quotations inside config.
 - In .env file
-
-`SECRET_KEY = 'API key'`
-
+        
+        SECRET_KEY = 'API key'
+    
 - In settings.py
 
-`SECRET_KEY = config(SECRET_KEY)`
+        SECRET_KEY = config(SECRET_KEY)
