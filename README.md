@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://img.shields.io/badge/-Heroku Hosted-8C6DB1?style=flat&logo=heroku&logoColor=FFFFFF" alt="Heroku" height="30">
+    <a href="https://www.heroku.com/"><img src="https://img.shields.io/badge/-Heroku Hosted-8C6DB1?style=flat&logo=heroku&logoColor=FFFFFF" alt="Heroku" height="30"></a>
 </p>
 
 <p align="center">
