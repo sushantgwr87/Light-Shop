@@ -1,3 +1,20 @@
+<p align="center">
+    <img src="https://img.shields.io/badge/-Heroku Hosted-8C6DB1?style=flat&logo=heroku&logoColor=FFFFFF" alt="Heroku" height="30">
+</p>
+
+<p align="center">
+    <img src="https://img.shields.io/badge/-Django-1f6E16?style=flat&logo=django&logoColor=000000" alt="django" height="30">
+    &nbsp; &nbsp; 
+    <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5" height="28">
+    &nbsp; &nbsp; 
+    <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3" alt="CSS" height="28">
+    &nbsp; &nbsp; 
+    <img src="https://img.shields.io/badge/-python-E9FA2f?style=flat&logo=python&logoColor=000000" alt="python" height="28">
+    &nbsp; &nbsp; 
+    <img src="https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript" alt="Javascript" height="30">
+</p>
+&nbsp; 
+
 # Light Shop
 
 A Light shop ecommerce website with SQL database implemented using Django framework.
@@ -24,25 +41,24 @@ Bootstrap version 5 is used for ease of designing.
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+- To run this project, you will need to add the following environment variables to your .env file
 
 `SECRET_KEY = API key`
 
-In settings.py this key is used :
+- In settings.py this key is used :
 
 `SECRET_KEY = config('The variable name in .env')`
 
-In my case, variable name is SECRET_KEY name itself :
+- In my case, variable name is SECRET_KEY name itself :
 
 `SECRET_KEY = config('SECRET_KEY')`
 
-### Note
-If you store API key as string in .env then remove quotations inside config.
+**If you store API key as string in .env then remove quotations inside config.**
 
-In .env file
+- In .env file
 
 `SECRET_KEY = 'API key'`
 
-In settings.py
+- In settings.py
 
 `SECRET_KEY = config(SECRET_KEY)`
