@@ -15,6 +15,9 @@
 </p>
 &nbsp; 
 
+# :warning: Important Update :warning:
+Hosting of this project has been removed since Heroku stopped free servers.
+
 # Light Shop
 
 A Light shop ecommerce website with SQL database implemented using Django framework.
